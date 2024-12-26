@@ -1,0 +1,8 @@
+[package]
+name = "luna"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5.23", features = ["derive"] }
+parse-display = "0.10.0"
