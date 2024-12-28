@@ -78,9 +78,12 @@ impl Date {
     }
 }
 
+/// Computes the weekday for a given date.
+/// Only years in the range [1753; 2099] are supported.
 #[derive(Parser, Debug)]
 #[command(version, about)]
 struct Cli {
+    /// A date specified in the format DD.MM.YYYY
     date: Date,
 }
 
